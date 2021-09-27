@@ -14,19 +14,19 @@ const App = () => (
       <Layout>
         <div className="routes">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/crypto/">
               <Homepage />
             </Route>
-            <Route exact path="/exchanges">
+            <Route exact path="/crypto/exchanges">
               <Exchanges />
             </Route>
-            <Route exact path="/cryptocurrencies">
+            <Route exact path="/crypto/cryptocurrencies">
               <Cryptocurrencies />
             </Route>
-            <Route exact path="/crypto/:coinId">
+            <Route exact path="/crypto/crypto/:coinId">
               <CryptoDetails />
             </Route>
-            <Route exact path="/news">
+            <Route exact path="/crypto/news">
               <News />
             </Route>
           </Switch>
@@ -34,15 +34,15 @@ const App = () => (
       </Layout>
       <div className="footer">
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-          <Link to="/">
+          <Link to="/crypto/">
             Cryptoverse Inc.
           </Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
+          <Link to="/crypto/">Home</Link>
+          <Link to="/crypto/exchanges">Exchanges</Link>
+          <Link to="/crypto/news">News</Link>
         </Space>
       </div>
     </div>
